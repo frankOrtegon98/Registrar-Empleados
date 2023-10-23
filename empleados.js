@@ -21,3 +21,18 @@ function agregarEmpleado(){
 
     alert("Empleado ha sido registrado");
 }
+
+function mostrarEmpleados(){
+
+    let listado = "";
+
+    for(let empleado of empleados){
+        for(let atributo in empleado){
+            listado = listado + atributo.toUpperCase() + ": " + empleado[atributo] + ",";  
+        }
+        listado = listado + "\n";
+    }
+
+    alert(listado);
+
+}
